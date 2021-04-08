@@ -1,25 +1,26 @@
+body {
+    background: #553055;
+}
 .App {
-    max-width: 400px;
-    margin: 30px auto;
+    background: #4c2a4c;
+    max-width: 700px;
+    width: 90%;
+    margin: 20px auto;
+    color: #eee;
+}
+
+.navbar{
+    padding: 10px 20px;
     text-align: center;
+    background: #6d3d6d;
 }
 
-nav {
-    padding: 5px;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+.navbar h1 {
+    margin: 10px 0;
 }
 
 .book-list {
-    padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .book-list ul {
@@ -28,7 +29,30 @@ nav ul li {
 }
 
 .book-list li {
+    background: #6d3d6d;
     padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+
+.book-list li:hover {
+    opacity: 0.7;
+    text-decoration: line-through;
+} 
+
+.book-list .title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.book-list .author {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+.empty {
+    margin: 20px;
+    text-align: center;
 }
