@@ -5,10 +5,9 @@ export const BookContext = createContext()
 
 const BookContextProvider = ({ children }) => {
     const [books, setBooks] = useState([
-        { title: 'Clean Code', id: uuidv4() },
-        { title: 'The Pragmatic Programmer', id: uuidv4() },
-        { title: 'The Mythical Man-Month', id: uuidv4() },
-        { title: 'Peopleware', id: uuidv4() },
+        { title: 'Clean Code', author: 'Robert C. Martin', id: uuidv4() },
+        { title: 'The Pragmatic Programmer', author: 'Andrew Hunt and David Thomas', id: uuidv4() },
+        { title: 'The Mythical Man-Month', author: 'Fred Brooks', id: uuidv4() },
     ])
     const addBook = (title, author) => {
         setBooks([...books, { title, author, id: uuidv4() }])
