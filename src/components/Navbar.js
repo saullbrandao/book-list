@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <h1>Saull Reading List</h1>
+            <h1>Reading List</h1>
             <p>Currently you have {books.length} books to get through...</p>
         </nav>
     )
